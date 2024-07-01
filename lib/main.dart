@@ -5,7 +5,6 @@ void main() {
     BenimUygm(),
   );
 }
-
 class BenimUygm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class BenimUygm extends StatelessWidget {
           child: Center(
             child: Column(
               mainAxisSize: MainAxisSize
-                  .min, //ana eksen boyunca minimum boyutta yer kaplamasını sağlayan bir özelliktir.
+                  .min, 
               children: <Widget>[
                 CircleAvatar(
                   radius: 70.0,
@@ -45,7 +44,7 @@ class BenimUygm extends StatelessWidget {
                 Card(
                   margin: EdgeInsets.symmetric(
                       horizontal:
-                          43.0), // Bu kod satırı, bir Flutter widget'ının kenar boşluklarını (margin) ayarlar
+                          43.0), 
                   color: Colors.brown,
                   child: Row(
                     children: <Widget>[
@@ -95,76 +94,3 @@ class BenimUygm extends StatelessWidget {
     );
   }
 }
-
-//   child: Container(
-// width: 250,
-// height: 250,
-// color: Colors.white,
-
-// decoration: BoxDecoration(
-//   shape: BoxShape.rectangle,
-//   borderRadius: BorderRadiusDirectional.circular(16),
-//   color: Colors.white,
-// ),
-// margin: EdgeInsets.all(16.0),
-// padding: EdgeInsets.all(38.0),
-// //color: Colors.white,
-// child: Transform(
-//   child: Text('Merhaba Dart'),
-//   transform: Matrix4.rotationZ(1.0),
-//   alignment: FractionalOffset.center,
-//),
-
-//   SizedBox(
-//     height: 30,
-//   ),
-//   Container(
-//     width: 100,
-//     height: 100,
-//     color: Colors.white,
-//     child: Text('2.container'),
-//   ),
-//   SizedBox(
-//     height: 30,
-//   ),
-//   Container(
-//     width: 100,
-//     height: 100,
-//     color: Colors.blue,
-//     child: Text('3.container'),
-//   ),
-// ],
-
-// child: Column(
-//   mainAxisSize: MainAxisSize.max,
-//   mainAxisAlignment: MainAxisAlignment
-//       .spaceEvenly, //yatay veya dikey olarak hizalanırken, widget'lar arasında eşit boşluklar oluşturacak şekilde ayarlar.
-//   crossAxisAlignment: CrossAxisAlignment
-//       .stretch, //widget'ının içindeki child widget'ların çapraz eksen boyunca nasıl hizalanacağını
-//   children: <Widget>[
-//     Container(
-//       height: 100,
-//       color: Colors.white,
-//     ),
-//     Row(
-//       mainAxisAlignment: MainAxisAlignment
-//           .spaceBetween, //widget'ların kenarlarında boşluklar oluşturacak şekilde ayarlar. Widget'lar arasında ise boşluk bırakmaz. Bu özellik, widget'larınızı kenarlara yaslayarak düzenlemenize yardımcı olur.
-//       children: <Widget>[
-//         Container(
-//           height: 100,
-//           width: 100,
-//           color: Colors.redAccent,
-//         ),
-//         Container(
-//           height: 100,
-//           width: 100,
-//           color: Colors.yellow,
-//         )
-//       ],
-//     ),
-//     Container(
-//       height: 100,
-//       color: Colors.lightBlue,
-//     )
-//   ],
-// ),
